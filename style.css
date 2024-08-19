@@ -1,0 +1,503 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Container Starts */
+.container {
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container-title-one {
+    font-weight: bolder;
+    font-family: mv boli;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.container-title-one__one {
+    color: #1B365D;
+    border-bottom: 4px solid #1B365D;
+}
+
+.container-title-one__one span {
+    color: #FAC031;
+    margin-right: 1%;
+}
+
+.span-one {
+    color: #1B365D;
+    border-bottom: 4px solid #FAC031;
+    margin-right: 1%;
+}
+
+.span-two {
+    color: #FAC031;
+    border-bottom: 4px solid #1B365D;
+}
+
+/* section One Starts */
+.section-one {
+    width: 100%;
+    height: 100%;
+}
+
+.icecream-container {
+    display: grid;
+    grid-template: repeat(2, 32%)/repeat(3, 22%);
+    gap: 19% 10%;
+    width: 100%;
+    place-content: space-evenly;
+    margin-bottom: 3%
+}
+
+.icecream-box__img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 4%;
+}
+
+.icecream-box__img img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.icecream-box__img img:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.icecream-box-content {
+    text-align: center;
+}
+
+.icecream-box-content__title {
+    color: #1B365D;
+    font-size: 25px;
+}
+
+.icecream-box-content__price {
+    margin: 10px 0px 10px 0px;
+}
+
+.icecream-box-content__price span {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1B365D;
+}
+
+.icecream-box-content__btn {
+    padding: 5px 25px 5px 25px;
+    background-color: #FAC031;
+}
+
+.icecream-box-content__btn a {
+    text-decoration: none;
+    color: #1B365D;
+    font-weight: 700;
+}
+
+/* section One End */
+
+.container-title-two {
+    margin-top: 8%;
+    margin-bottom: 3%;
+    text-align: center;
+    font-family: mv boli;
+}
+
+.container-title-two__spanone {
+    color: #FAC031;
+    border-bottom: 4px solid #1B365D;
+    margin-right: 1%;
+}
+
+.container-title-two__spantwo {
+    color: #1B365D;
+    border-bottom: 4px solid #FAC031;
+}
+
+/* section Two Starts */
+.section-two {
+    display: grid;
+    grid-template: repeat(2, 46%)/repeat(3, 27%);
+    width: 100%;
+    gap: 6% 5%;
+    place-content: center;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.imagebox {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.3s;
+    color: #fac031;
+    text-align: center;
+    display: grid;
+    place-content: center;
+}
+
+.content:hover {
+    opacity: 1;
+}
+
+.content h2 {
+    opacity: 1;
+    font-weight: 800;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+.content p {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 4px;
+    opacity: 1;
+    margin-bottom: 7px;
+}
+
+.content a {
+    padding: 5px;
+    color: black;
+    background-color: #fac031;
+    text-decoration: none;
+    margin: auto;
+    border: transparent;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+/* section two End */
+
+.container-title-three {
+    margin-top: 3%;
+    text-align: center;
+    color: #1B365D;
+    font-family: mv boli;
+}
+
+/* section Three Starts */
+.section-three {
+    display: grid;
+    grid-template: repeat(2, 43%)/repeat(3, 20%);
+    width: 100%;
+    gap: 27% 3%;
+    place-content: center;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+
+.box {
+    position: relative;
+    display: block;
+    width: 270px;
+    height: 270px;
+    text-align: center;
+}
+
+.box-one {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.box-one img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.box-two {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.box-two img {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.1s;
+    border-radius: 10px;
+}
+
+.box-two img:hover {
+    opacity: 1;
+    transition: 1s;
+    transform: scale(1.08);
+    border-radius: 15px;
+}
+
+.box-content__title {
+    color: #1B365D;
+    font-weight: bolder;
+}
+
+.box-content__price {
+    color: #1B365D;
+    margin-bottom: 3px;
+}
+
+.box-content__price span {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.box-content__btn {
+    background-color: #fac031;
+    padding: 4px 15px 4px 15px;
+    border: 2px solid #1B365D;
+    margin: 7px 0px 7px 0px;
+    place-items: center;
+}
+
+.box-content__btn a {
+    color: #1B365D;
+    text-decoration: none;
+}
+
+/* section Three End */
+
+.container-title-four {
+    color: #1B365D;
+    margin-top: 20%;
+    margin-bottom: 7%;
+    text-align: center;
+    font-family: mv boli;
+}
+
+.container-title-four span{
+    color: #fac031;
+    margin-left: 1%;
+}
+
+/* Section Four Starts */
+.section-four{
+    display: grid;
+    grid-template: repeat(2,50%)/repeat(4,22%);
+    place-content: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    gap: 15% 2%;
+    margin-bottom: 10%;
+}
+
+.our-menu__img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.our-menu__img img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.our-menu__img img:hover{
+    transition: 0.5s;
+    transform: scale(1.06);
+}
+
+.our-menu__content{
+    text-align: center;
+    color: #1B365D;
+    padding: 10px;
+}
+
+.our-menu-main{
+    border: 2px solid black;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.our-menu__content h2{
+    font-weight: 800;
+}
+
+.our-menu__content p{
+    font-size: 17px;
+    font-weight: 700;
+    margin: 3px 0px 3px 0px;
+}
+
+.our-menu__content button{
+    padding: 4px 15px 4px 15px;
+    background-color: #fac031;
+}
+
+.our-menu__content a{
+    text-decoration: none;
+    color: #1B365D;
+    font-weight: 700;
+}
+/* Section Four End */
+/* Container End */
+
+/* Media Queries Starts */
+@media screen and (max-width:1200px) {
+    .content p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .section-three {
+        display: grid;
+        grid-template: repeat(2, 54%)/repeat(3, 20%);
+        width: 100%;
+        gap: 25% 3%;
+        place-content: center;
+        justify-content: space-evenly;
+        margin-top: 8%;
+    }
+
+    .box-two {
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        overflow: hidden;
+    }
+
+    .box {
+        position: relative;
+        display: block;
+        width: 170px;
+        height: 170px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .container-title-two {
+        margin-top: 15%;
+    }
+
+    .content p {
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .icecream-container {
+        display: grid;
+        grid-template: repeat(2, 26%)/repeat(2, 30%);
+        gap: 18% 13%;
+        width: 100%;
+        place-content: space-evenly;
+    }
+
+    .icecream-box-content__btn {
+        margin-bottom: 23%;
+    }
+
+    .container-title-two {
+        margin-top: 63%;
+    }
+
+    .section-two {
+        display: grid;
+        grid-template: repeat(2, 38%)/repeat(2, 38%);
+        width: 100%;
+        gap: 6% 10%;
+        place-content: center;
+        margin-top: 15%;
+    }
+
+    .content {
+        font-size: 13px;
+    }
+
+    .content p {
+        display: none;
+    }
+
+    .section-two {
+        margin-bottom: 13%;
+    }
+
+    .section-three {
+        display: grid;
+        grid-template: repeat(2, 30%)/repeat(2, 26%);
+        width: 100%;
+        gap: 23% 7%;
+        place-content: center;
+        justify-content: space-evenly;
+        margin-top: 22%;
+    }
+
+    .container-title-four{
+        margin-top: 36%;
+    }
+
+    .section-four{
+        display: grid;
+        grid-template: repeat(2,22%)/repeat(2,32%);
+        place-content: center;
+        justify-content: space-evenly;
+        justify-items: center;
+        gap: 5% 2%;
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .container-title-two {
+        margin-top: 80%;
+    }
+
+    .section-two {
+        margin-bottom: 13%;
+    }
+
+    .content h2 {
+        font-size: 17px;
+    }
+
+    .section-three {
+        margin-bottom: 10%;
+    }
+
+    .container-title-four{
+        margin-top: 44%;
+    }
+}
+
+/* Media Queries End   */
